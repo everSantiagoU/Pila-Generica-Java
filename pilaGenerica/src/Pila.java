@@ -38,5 +38,15 @@ public class Pila <T>{
         }
     }
 
+    public int size(){
+        int contador = 0;
+        NodoPila<T> temporal = primero;
+        while (temporal != null){
+            contador ++;
+            temporal = temporal.siguiente;
+        }
+        return contador;
+    }
+
     }
 

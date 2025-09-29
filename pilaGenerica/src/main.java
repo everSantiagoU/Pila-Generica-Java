@@ -9,6 +9,8 @@ public class Main {
         System.out.println("Elemento sacado: " + pilaEnteros.pop());
         System.out.println("Elemento en el tope (peek): " + pilaEnteros.peek());
         pilaEnteros.isEmpty();
+        System.out.println("Tamaño de la pila: " + pilaEnteros.size());
+
 
 
 
