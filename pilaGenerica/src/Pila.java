@@ -14,7 +14,7 @@ public class Pila <T>{
     }
 
     public T pop(){
-        if (primero == null){
+        if (primero == null){ // verificamos que la pila tenga elementos
             System.out.println("la pila esta vacia. No hay nodos para eliminar");
             return null;
         }
@@ -22,5 +22,21 @@ public class Pila <T>{
         primero = primero.siguiente;
         return valor;
         }
+
+    public T peek(){
+        if (primero == null){ //verificar que hayan nodos en la pila
+            return null;
+        }
+        return primero.valorNodo; // de ser asi, retornamos el primero sin eliminarlo
+    }
+
+    public void isEmpty(){
+        if (primero == null){
+            System.out.println("la pila esta vacia.");
+        }else{
+            System.out.println("la pila tiene elementos.");
+        }
+    }
+
     }
 
