@@ -12,4 +12,15 @@ public class Pila <T>{
             primero = nuevoNodo;
         }
     }
-}
+
+    public T pop(){
+        if (primero == null){
+            System.out.println("la pila esta vacia. No hay nodos para eliminar");
+            return null;
+        }
+        T valor = primero.valorNodo;
+        primero = primero.siguiente;
+        return valor;
+        }
+    }
+
