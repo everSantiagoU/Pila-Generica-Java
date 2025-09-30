@@ -1,19 +1,14 @@
 public class Main {
     public static void main(String[] args){
-        Pila<Integer> pilaEnteros = new Pila<>();
+        String expresion1 = "{[()]}";
+        String expresion2 = "{[(])}";
+        String expresion3 = "((()))";
+        String expresion4 = "(()";
 
-        pilaEnteros.push(10);
-        pilaEnteros.push(20);
-        pilaEnteros.push(30);
-
-        System.out.println("Elemento sacado: " + pilaEnteros.pop());
-        System.out.println("Elemento en el tope (peek): " + pilaEnteros.peek());
-        pilaEnteros.isEmpty();
-        System.out.println("Tamaño de la pila: " + pilaEnteros.size());
-
-
-
-
+        System.out.println(expresion1 + " -> " + Balanceador.estanBalanceados(expresion1));
+        System.out.println(expresion2 + " -> " + Balanceador.estanBalanceados(expresion2));
+        System.out.println(expresion3 + " -> " + Balanceador.estanBalanceados(expresion3));
+        System.out.println(expresion4 + " -> " + Balanceador.estanBalanceados(expresion4));
 
     }
 }
