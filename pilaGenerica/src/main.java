@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args){
+        //prueba del balanceador
         String expresion1 = "{[()]}";
         String expresion2 = "{[(])}";
         String expresion3 = "((()))";

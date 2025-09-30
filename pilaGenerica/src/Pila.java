@@ -30,12 +30,8 @@ public class Pila <T>{
         return primero.valorNodo; // de ser asi, retornamos el primero sin eliminarlo
     }
 
-    public void isEmpty(){
-        if (primero == null){
-            System.out.println("la pila esta vacia.");
-        }else{
-            System.out.println("la pila tiene elementos.");
-        }
+    public boolean isEmpty(){
+        return primero == null;
     }
 
     public int size(){
